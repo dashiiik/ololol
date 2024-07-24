@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const square5 = document.querySelector('.square5');
     const square13 = document.querySelector('.square13');
     const square6 = document.querySelector('.square6');
-    const square14 = document.querySelector('.square14');
     let isMoved = false;
     let initialPosition = square.style.left; 
     let initialPosition2 = square2.style.left; 
