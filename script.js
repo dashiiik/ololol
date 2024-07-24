@@ -11,10 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const square13 = document.querySelector('.square13');
     const square6 = document.querySelector('.square6');
     const square14 = document.querySelector('.square14');
-    const square7 = document.querySelector('.square7');
-    const square15 = document.querySelector('.square15');
-    const square8 = document.querySelector('.square8');
-    const square16 = document.querySelector('.square16');
     let isMoved = false;
     let initialPosition = square.style.left; 
     let initialPosition2 = square2.style.left; 
@@ -22,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let initialPosition4 = square4.style.left; 
     let initialPosition5 = square5.style.left; 
     let initialPosition6 = square6.style.left; 
-    let initialPosition7 = square7.style.left; 
-    let initialPosition8 = square8.style.left; 
+
   
     square.addEventListener('click', function() {
       if (isMoved) {
@@ -139,43 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
                   isMoved = !isMoved; 
                 });
 
-                square7.addEventListener('click', function() {
-                  if (isMoved) {
-                    square7.style.left = initialPosition7; 
-                  } else {
-                    console.log('Square3 moved to:', square5.style.right);
-                  }
-              
-                  isMoved = !isMoved; 
-                });
-                square15.addEventListener('click', function() {
-                    if (isMoved) {
-                      square15.style.left = initialPosition7; 
-                    } else {
-                      console.log('Square11 moved to:', square13.style.right);
-                    }
-                
-                    isMoved = !isMoved; 
-                  });
-
-                  square8.addEventListener('click', function() {
-                    if (isMoved) {
-                      square8.style.left = initialPosition8; 
-                    } else {
-                      console.log('Square3 moved to:', square5.style.right);
-                    }
-                
-                    isMoved = !isMoved; 
-                  });
-                  square16.addEventListener('click', function() {
-                      if (isMoved) {
-                        square16.style.left = initialPosition8; 
-                      } else {
-                        console.log('Square11 moved to:', square13.style.right);
-                      }
-                  
-                      isMoved = !isMoved; 
-                    });
   
     document.querySelector('.cinnabons').addEventListener('click', function() {
       if (isMoved) {
@@ -279,38 +237,6 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Square moved to:', square5.style.left);
     });
 
-    document.querySelector('.brownie').addEventListener('click', function() {
-      if (isMoved) {
-        square7.style.left = '0px'; 
-      } else {
-        square7.style.right = '50px'; 
-      }
 
-      if (isMoved) {
-        square15.style.left = '0px'; 
-      } else {
-        square15.style.right = '50px'; 
-      }
-  
-      isMoved = !isMoved;
-      console.log('Square moved to:', square5.style.left);
-    });
-
-    document.querySelector('.khachapuri').addEventListener('click', function() {
-      if (isMoved) {
-        square8.style.left = '1020px'; 
-      } else {
-        square8.style.right = '50px'; 
-      }
-
-      if (isMoved) {
-        square16.style.left = '1020px'; 
-      } else {
-        square16.style.right = '50px'; 
-      }
-  
-      isMoved = !isMoved;
-      console.log('Square moved to:', square5.style.left);
-    });
   });
   
